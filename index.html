@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Information Card</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="wrapper">
+
+        <div id="user-input">
+            <h2 id="heading">Input User Information</h2>
+            <form id="userForm">
+                <input type="text" id="firstName" placeholder="First Name" required>
+                <input type="text" id="lastName" placeholder="Last Name" required>
+                <input type="text" id="country" placeholder="Country" required>
+                <input type="tel" id="phone" placeholder="Phone Number" required>
+                <input type="text" id="state" placeholder="State">
+                <input type="text" id="city" placeholder="City">
+                <input type="text" id="village" placeholder="Village">
+                <button type="submit">Save Information</button>
+            </form>
+        </div>
+
+
+        <div id="info-card">
+                <h2 id="heading">User Information Card</h2>
+            <div id="user-info">
+                <p><strong>First Name:</strong> <span id="displayFname"></span></p>
+                <p><strong>Last Name:</strong> <span id="displayLname"></span></p>
+                <p><strong>Country:</strong> <span id="displayCountry"></span></p>
+                <p><strong>Phone Number:</strong> <span id="displayPhone"></span></p>
+                <p><strong>State:</strong> <span id="displayState"></span></p>
+                <p><strong>City:</strong> <span id="displayCity"></span></p>
+                <p><strong>Village:</strong> <span id="displayVillage"></span></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

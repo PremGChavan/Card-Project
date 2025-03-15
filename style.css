@@ -1,0 +1,166 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #dbeafe, #bfdbfe);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+/* Wrapper */
+#wrapper {
+    width: 80%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;  
+}
+
+/* User Input Form */
+#user-input {
+    width: 100%;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+input {
+    width: 95%;
+    padding: 12px;
+    border: 2px solid #93c5fd;
+    border-radius: 6px;
+    font-size: 16px;
+    background: #f0f9ff;
+    color: #333;
+    transition: all 0.3s ease-in-out;
+}
+
+input:focus {
+    border-color: #2563eb;
+    background: white;
+    outline: none;
+    box-shadow: 0 0 8px rgba(37, 99, 235, 0.3);
+}
+
+/* Button Styling */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #1e40af;
+    box-shadow: 0 4px 10px rgba(30, 64, 175, 0.3);
+}
+
+/* User Information Card */
+#info-card {
+    display: none; /* Initially hidden */
+    width: 100%;
+    background: #f8fafc;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    border-left: 5px solid #2563eb;
+    transition: all 0.3s ease-in-out;
+}
+
+#heading {
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 12px;
+    color: #1e3a8a;
+}
+
+#user-info p {
+    font-size: 16px;
+    margin: 6px 0;
+    color: #374151;
+    font-weight: 500;
+}
+
+/* Responsive Design */
+
+/* Tablets */
+@media (max-width: 768px) {
+    #wrapper {
+        max-width: 90%;
+    }
+    
+    input {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 10px;
+    }
+    
+    #info-card {
+        padding: 15px;
+    }
+    
+    #heading {
+        font-size: 20px;
+    }
+
+    #user-info p {
+        font-size: 14px;
+    }
+}
+
+/* Mobile Devices */
+@media (max-width: 600px) {
+    #wrapper {
+        width: 95%;
+    }
+
+    input {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px;
+    }
+    
+    #info-card {
+        padding: 12px;
+    }
+    
+    #heading {
+        font-size: 18px;
+    }
+
+    #user-info p {
+        font-size: 13px;
+    }
+}
